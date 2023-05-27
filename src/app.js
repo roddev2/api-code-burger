@@ -7,6 +7,7 @@ import './database'
 
 const corsOptions = {
   origin: 'https://code-burger-interface-fywr8iwan-roddev2.vercel.app/',
+  credentials: true,
 }
 class App {
   constructor() {
