@@ -8,7 +8,7 @@
     "dev": "nodemon",
     "debug": "nodemon --inspect",
     "build": "sucrase ./src -d ./dist --transforms imports",
-    "start" : "nodemon"
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +36,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
+    "sequelize-cli": "^6.6.0",
     "sucrase": "^3.20.0"
   }
 }

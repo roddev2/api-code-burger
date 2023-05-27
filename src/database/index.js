@@ -12,11 +12,13 @@ const models = [User, Product, Category]
 class Database {
   constructor() {
     this.init()
-    // this.mongo()
+    this.mongo()
   }
 
   init() {
-    this.connection = new Sequelize(configDatabase)
+    this.connection = new Sequelize(
+      'postgresql://postgres:lwN3aRjQ20gH6YmXLsAT@containers-us-west-176.railway.app:6445/railway'
+    )
     models
       .map((model) => model.init(this.connection))
       .map(
@@ -26,7 +28,7 @@ class Database {
 
   mongo() {
     this.mongoConnection = mongoose.connect(
-      'mongodb://localhost:27017/codeburger',
+      'mongodb://mongo:zsbyptEyd1DTS90A2ai2@containers-us-west-103.railway.app:6980',
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

@@ -1,8 +1,8 @@
 module.exports = {
   dialect: 'postgres',
-  url: 'postgres://yybuidvrzxwfvo:160b0193681956db62151a120eb05b35ebf492f277532ab90fe2fc0b4ae88d4b@ec2-3-219-204-29.compute-1.amazonaws.com:5432/d1jeej75cjceir',
+  url: 'postgresql://postgres:lwN3aRjQ20gH6YmXLsAT@containers-us-west-176.railway.app:6445/railway',
   define: {
-    timespamps: true,
+    timestamps: true,
     underscored: true,
     underscoredAll: true,
   },
