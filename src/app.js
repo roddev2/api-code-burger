@@ -6,7 +6,7 @@ import cors from 'cors'
 import './database'
 
 const corsOptions = {
-  origin: *,
+  origin: '*',
   credentials: true,
 }
 class App {
